@@ -1,0 +1,28 @@
+{
+  "name": "the-secret-life-of-objects",
+  "version": "1.0.0",
+  "description": "Summary of the Chapter 06 of the Eloquent Javascript book",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ULL-ESIT-PL-1718/chapter06-the-secret-life-of-objects.git"
+  },
+  "keywords": [
+    "eloquentJS",
+    "OOP"
+  ],
+  "author": "Casiano Rodríguez León",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ULL-ESIT-MII-CA-1718/handling-events-KevMCh/issues"
+  },
+  "homepage": "https://github.com/ULL-ESIT-MII-CA-1718/handling-events-KevMCh#readme",
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-shell": "*",
+    "gulp-watch": "^5.0.0"
+  }
+}

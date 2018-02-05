@@ -1,5 +1,6 @@
 const MatrixIterator = require("matrix-iterator");
 
+//tag::code[]
 class Matrix {
   constructor(width, height, content = () => undefined) {
     this.width = width;
@@ -20,8 +21,9 @@ class Matrix {
     this.content[y * this.width + x] = value;
   }
 
-	[Symbol.iterator]() {
-		return new MatrixIterator(this);
-	}
+  [Symbol.iterator]() {
+    return new MatrixIterator(this);
+  }
 }
+// end::code[]
 module.exports = Matrix;

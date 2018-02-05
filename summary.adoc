@@ -1,0 +1,23 @@
+= Summary
+:source-highlighter: coderay
+
+== _Chapter 06_
+
+The core idea in object-oriented programming is to divide programs into smaller pieces, and make each piece responsible for managing its own state.
+
+This way, some knowledge about the way a piece of the program works is kept local to that piece. This way, someone working on the rest of the program does not have to remember or even be aware of that knowledge. And if these details change, only the code directly around it needs to change.
+
+Different pieces of such a program interact with each other through interfaces, which are limited sets of functions or bindings that provide useful functionality at a more abstract level, hiding its precise implementation.
+
+=== The Iterator Interface
+
+browsers register the functions as handlers to react to events as they
+occur. This use a queue, the program check the queue for new events and react to
+ what it finds there.
+
+[source, js]
+.link:./src/the-iterator-interface/matrix.js[Click]
+----
+include::./src/the-iterator-interface/matrix.js[tag=code]
+----
+
