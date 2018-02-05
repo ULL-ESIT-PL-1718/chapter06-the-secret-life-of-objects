@@ -14,6 +14,10 @@ console.log(`Is toString's age known? ${"toString" in ages}`);
 console.log(ages["toString"]); 
 // → [Function: toString]
 console.log(ages["toString"]()); 
+console.log('ages hasOwnProperty toString? '+ages.hasOwnProperty("toString"));
+// → false
+console.log(Object.keys(ages)); // Object.keys only returns an object’s own keys
+// → [ 'Boris', 'Liang', 'Júlia' ]
 
 /*  
 	If you pass null to Object.create, the resulting object will
