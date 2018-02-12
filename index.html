@@ -536,9 +536,19 @@ table.CodeRay td.code>pre{padding:0}
 <div class="sect2">
 <h3 id="_the_iterator_interface">The Iterator Interface</h3>
 <div class="paragraph">
-<p>browsers register the functions as handlers to react to events as they
-occur. This use a queue, the program check the queue for new events and react to
- what it finds there.</p>
+<p>The object given to a <code>for/of loop</code> is expected to be iterable. This means that it has a method named with the <code>Symbol.iterator</code> symbol (a symbol value defined by the language, stored as a property of the <code>Symbol</code> function).</p>
+</div>
+<div class="paragraph">
+<p>When called, that method should return an object that provides a second interface, iterator.
+This is the <strong>actual thing</strong> that iterates.</p>
+</div>
+<div class="paragraph">
+<p>It has a next method that returns the <code>next result</code>.
+That result should be an object with a <code>value</code> property, providing the next value, and a <code>done</code> property, which should be <code>true</code> when there are no more results and <code>false</code> otherwise.</p>
+</div>
+<div class="paragraph">
+<p>Note that the <code>next</code>, <code>value</code>, and <code>done</code> property names are plain strings, not symbols.
+Only <code>Symbol.iterator</code>, which is likely to be added to a lot of different objects, is an actual symbol.</p>
 </div>
 <div class="listingblock">
 <div class="title"><a href="./src/the-iterator-interface/matrix.js">Click</a></div>
@@ -575,7 +585,7 @@ occur. This use a queue, the program check the queue for new events and react to
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-02-05 15:18:51 WET
+Last updated 2018-02-11 13:31:44 WET
 </div>
 </div>
 </body>

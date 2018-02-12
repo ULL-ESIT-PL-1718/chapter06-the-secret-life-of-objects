@@ -1,4 +1,5 @@
-const MatrixIterator = require("matrix-iterator");
+//const MatrixIterator = require("matrix-iterator");
+import {MatrixIterator} from './matrix-iterator.mjs';
 
 //tag::code[]
 class Matrix {
@@ -26,4 +27,5 @@ class Matrix {
   }
 }
 // end::code[]
-module.exports = Matrix;
+//module.exports = Matrix;
+export {Matrix};

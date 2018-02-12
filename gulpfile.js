@@ -6,6 +6,6 @@ gulp.task("preinstall", shell.task([
       "sudo gem install asciidoctor"
 ]));
 
-gulp.task("server", shell.task("static-server -p 8080"));
+gulp.task("server", shell.task("static -p 8080"));
 
 gulp.task("doc", shell.task("asciidoctor summary.adoc -o index.html"));

@@ -19,4 +19,6 @@ class MatrixIterator {
   }
 }
 
-module.exports = MatrixIterator;
+//module.exports = MatrixIterator;
+
+export {MatrixIterator};

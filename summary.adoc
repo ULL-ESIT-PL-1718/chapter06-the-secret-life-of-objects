@@ -11,13 +11,23 @@ Different pieces of such a program interact with each other through interfaces, 
 
 === The Iterator Interface
 
-browsers register the functions as handlers to react to events as they
-occur. This use a queue, the program check the queue for new events and react to
- what it finds there.
+The object given to a ``for/of loop`` is expected to be iterable. This means that it has a method named with the ``Symbol.iterator`` symbol (a symbol value defined by the language, stored as a property of the ``Symbol`` function).
+
+When called, that method should return an object that provides a second interface, iterator. 
+This is the *actual thing* that iterates. 
+
+It has a next method that returns the ``next result``. 
+That result should be an object with a ``value`` property, providing the next value, and a ``done`` property, which should be ``true`` when there are no more results and ``false`` otherwise.
+
+Note that the ``next``, ``value``, and ``done`` property names are plain strings, not symbols. 
+Only ``Symbol.iterator``, which is likely to be added to a lot of different objects, is an actual symbol.  
 
 [source, js]
 .link:./src/the-iterator-interface/matrix.js[Click]
 ----
-include::./src/the-iterator-interface/matrix.js[tag=code]
+include::./src/the-iterator-interface/es6/matrix.mjs[tag=code]
 ----
 
+.link:./src/the-iterator-interface/index.html[Click]
+[source, html]
+include::./src/the-iterator-interface/index.html
