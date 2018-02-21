@@ -4,7 +4,7 @@
   "description": "Summary of the Chapter 06 of the Eloquent Javascript book",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "open https://ull-esit-pl-1718.github.io/chapter06-the-secret-life-of-objects/"
   },
   "repository": {
     "type": "git",

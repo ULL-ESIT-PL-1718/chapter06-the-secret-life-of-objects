@@ -14,6 +14,32 @@ Este repo intenta seguir los conceptos explicados  en
   [08:04:22] └── doc
   ```
 * index.html *Generado por  asciidoctor. Este repo tiene la master como GitHub page*
-package.json
-src
-summary.adoc
+* summary.adoc * Asccidoc file. Los apuntes*
+* src:
+
+	```bash
+	[~/EJS3/chapter06-the-secret-life-of-objects(master)]$ tree src
+	src
+	├── maps
+	│   └── maps-operations.js
+	├── polymorphism
+	│   ├── rabit-pol.js
+	│   └── tostring.js
+	├── symbols
+	│   └── symbol-vs-string.js
+	└── the-iterator-interface
+			├── commonJS
+			│   ├── main-matrix.js
+			│   ├── matrix-iterator.js
+			│   └── matrix.js
+			├── es6
+			│   ├── main-matrix.mjs
+			│   ├── matrix-iterator.mjs
+			│   ├── matrix.mjs
+			│   └── num.mjs
+			├── gulpfile.js
+			└── index.html
+
+	6 directories, 13 files
+  ```
+
