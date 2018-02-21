@@ -13,10 +13,12 @@ let sym = Symbol("sym");
 let sym2 = Symbol("sym");
 Rabbit.prototype[sym] = 55;
 Rabbit.prototype[sym2] = 10;
-console.log(blackRabbit[sym]); // 55
+console.log(blackRabbit[sym]);  // 55
+console.log(blackRabbit[sym2]); // 10
 
 let str = String("string");
 let str2 = String("string");
 Rabbit.prototype[str] = 55;
 Rabbit.prototype[str2] = 10;
-console.log(blackRabbit[str]); // 10
+console.log(blackRabbit[str]);   // 10
+console.log(blackRabbit[str2]);  // 10
