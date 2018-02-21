@@ -14,7 +14,7 @@ Este repo intenta seguir los conceptos explicados  en
   [08:04:22] └── doc
   ```
 * index.html *Generado por  asciidoctor. Este repo tiene la master como GitHub page*
-* summary.adoc * Asccidoc file. Los apuntes*
+* summary.adoc *[Asccidoc](https://asciidoctor.org/docs/what-is-asciidoc/) file. Los apuntes*
 * src:
 
 	```bash
