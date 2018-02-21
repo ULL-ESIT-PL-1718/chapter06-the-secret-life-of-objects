@@ -1,5 +1,5 @@
 Number.prototype[Symbol.iterator] = function() {
-  let ns = this.toString();
+  let ns = this.toString().split('').reverse();
   console.log(ns);
   let si = ns[Symbol.iterator]();
   let oldNext = si.next;
@@ -16,8 +16,8 @@ let it = num[Symbol.iterator]();
 
 console.log(it); // iterador 
 
-console.log(it.next()); // { value: 5, done: false }
-console.log(it.next()); // { value: 6, done: false }
 console.log(it.next()); // { value: 7, done: false }
+console.log(it.next()); // { value: 6, done: false }
+console.log(it.next()); // { value: 5, done: false }
 console.log(it.next()); // { value: NaN, done: true }
 
