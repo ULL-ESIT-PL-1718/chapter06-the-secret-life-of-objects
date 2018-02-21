@@ -3,6 +3,8 @@
 Este repo intenta seguir los conceptos explicados  en 
 [EJS 3rd  edition: Chapter 6: The Secret Life of Objects](http://eloquentjavascript.net/3rd_edition/06_object.html)
 
+En construcción.
+
 * gulpfile.js
 
   ```bash
